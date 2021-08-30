@@ -1,0 +1,438 @@
+/*
+    // ========================================== \\
+   ||                                              ||
+   ||                   General                    ||
+   ||                                              ||
+    \\ ========================================== //
+*/
+
+body{
+	margin: 0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;
+	color: #323232;
+}
+
+h2{
+	font-weight: 300;
+	font-size: 40px;
+}
+
+.clear{
+	clear: both;
+}
+
+abbr{
+	border-bottom: none;
+}
+
+.wrapper{
+	padding: 50px;
+}
+
+/*
+    // ========================================== \\
+   ||                                              ||
+   ||                    Header                    ||
+   ||                                              ||
+    \\ ========================================== //
+*/
+
+header{
+	background-color: #000;
+	color: #fff;
+	padding:30px 50px;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, .3);
+	color-adjust: exact;
+	-webkit-print-color-adjust: exact;
+}
+
+.titleWrapper{
+	width:400px;
+	float: left;
+}
+
+header h1{
+	float: left;
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 60px;
+	margin-bottom: 0;
+}
+
+header h2{
+	float: left;
+	font-size: 25px;
+	line-height: 12px;
+}
+
+header address{
+	float: right;
+	text-align: right;
+	font-style: normal;
+}
+
+header address a {
+	color:#fff;
+	text-decoration: none;
+	border-bottom: 1px solid #616161; 
+}
+
+header address a:visited {
+	color:#fff;
+}
+header address a:hover{
+	color:#ccc;
+	border-bottom-color: #ccc;
+}
+
+#profilePicture {
+	width: 130px;
+	border-radius: 2px;
+}
+/*
+    // ========================================== \\
+   ||                                              ||
+   ||                 Compétences                  ||
+   ||                                              ||
+    \\ ========================================== //
+*/
+.wrapper section:first-child h2{
+	margin-top: 0;
+}
+.wrapper section:first-child ul {
+	display: flex;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+	list-style-type: none;
+	padding: 0px;
+	margin:0px ;
+}
+
+.wrapper section:first-child ul li {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+    // ========================================== \\
+   ||                                              ||
+   ||               Experience pro                 ||
+   ||                                              ||
+    \\ ========================================== //
+*/
+
+#professionalExp > ul {
+	position: relative;
+	list-style-type: none;
+    border-left: 3px solid #000;
+	margin: 0 0 0 65px;
+	padding: 0;
+}
+
+#professionalExp > ul > li {
+	margin: 0 0 18px 65px;
+	padding: 0;
+}
+
+#professionalExp > ul > li::before {
+	content: '';
+    display: inline-block;
+	background-color: #000;
+    border-radius: 50%;
+    height: 15px;
+    position: absolute;
+    width: 15px;
+	left: -9px;
+	color-adjust: exact;
+	-webkit-print-color-adjust: exact;
+}
+
+
+
+/*
+    // ========================================== \\
+   ||                                              ||
+   ||             Formation & interets             ||
+   ||                                              ||
+    \\ ========================================== //
+*/
+.wrapper>article{
+	float:left;
+	width:50%;
+}
+
+.wrapper article:last-child ul{
+	list-style-type: none;
+	position: relative;
+	min-height: 140px;
+	width: 340px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.wrapper article:last-child ul li {
+	position: absolute;
+}
+
+.wrapper article:last-child ul li:first-child {
+	margin: 10px;
+}
+
+.wrapper article:last-child ul li:nth-child(2) {
+	left: 98px;
+    top: 50px;
+}
+
+.wrapper article:last-child ul li:nth-child(3) {
+	left: 20px;
+    top: 50px;
+}
+
+.wrapper article:last-child ul li:nth-child(4) {
+	left: 150px;
+}
+
+.wrapper article:last-child ul li:nth-child(5) {
+	left: 250px;
+    top: 30px;
+}
+
+.wrapper article:last-child ul li:nth-child(6) {
+	top: 85px;
+}
+
+.wrapper article:last-child ul li:nth-child(7) {
+	left: 260px;
+    top: 85px;
+}
+
+.wrapper article:last-child ul li:nth-child(8) {
+	left: 90px;
+    top: 120px;
+}
+
+.wrapper article:last-child ul li:nth-child(9) {
+	left: 230px;
+    top: 110px;
+}
+
+.wrapper article:last-child ul li:nth-child(10) {
+	left: 130px;
+    top: 75px;
+}
+
+/*
+    // ========================================== \\
+   ||                                              ||
+   ||                    Footer                    ||
+   ||                                              ||
+    \\ ========================================== //
+*/
+footer{
+	background-color: #000;
+	min-height: 50px;
+	margin-top: 50px;
+	color-adjust: exact;
+	-webkit-print-color-adjust: exact;
+}
+
+
+/*
+    // ========================================== \\
+   ||                                              ||
+   ||                Media queries                 ||
+   ||                                              ||
+    \\ ========================================== //
+*/
+/*************<1190***************/
+@media screen and (max-width: 1190px) {
+	
+	#professionalExp > ul {
+		border-left: none;
+	}
+
+	#professionalExp > ul, #professionalExp > ul > li { 
+		margin-left: 0;
+	}
+	
+
+	#professionalExp > ul > li::before {
+		content: none;
+	}
+}
+
+/*************<700***************/
+@media screen and (max-width: 700px) {
+	
+	.titleWrapper{
+		width:240px;
+	}
+	header h1{
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	header h2{
+		font-size: 20px;
+	}
+
+	h2{
+		text-align: center;
+	}
+	
+	.wrapper>article{
+	  	float: none;
+	  	width: 100%
+	}
+	.wrapper section:first-child ul li img{
+		max-height: 120px; 
+	}
+	
+ }
+
+ /*************<520***************/
+@media screen and (max-width: 520px) {
+	.titleWrapper{
+		width: 100%;
+	}
+	header h1, header h2{
+		text-align: center;
+		width: 100%;
+	}
+	
+	header address{
+		width:100%;
+		text-align: center;
+	}
+
+	header address img{
+		display: none;	
+	}
+
+	.wrapper article:last-child ul {
+		max-width: 100%;
+	}
+
+	.wrapper article:last-child ul li:nth-child(4) {
+		left: 120px;
+	}
+
+	.wrapper article:last-child ul li:nth-child(5) {
+		left: 180px;
+	}
+
+	.wrapper article:last-child ul li:nth-child(7) {
+		left: 80px;
+		top: 105px;
+	}
+
+	.wrapper article:last-child ul li:nth-child(8) {
+		left: 30px;
+		top: 140px;
+	}
+
+	.wrapper article:last-child ul li:nth-child(9) {
+		left: 190px;
+		top: 120px;
+	}
+}
+
+/*************PRINT***************/
+@media print {
+	@page {
+		size: A4;
+		margin: 0;
+  	}
+
+	html, body {
+		height:100%; 
+		margin: 0 !important; 
+		padding: 0 !important;
+		overflow: hidden;
+	}
+	
+	body {
+		font-size: 14px;
+	}
+
+	header {
+		padding: 20px 30px;
+	}
+	
+	header h1 {
+		font-size: 50px;
+		line-height: 50px;
+	}
+
+	header h2 {
+		font-size: 20px;
+	}
+
+	#profilePicture {
+		width: 80px;
+	}
+
+	.wrapper {
+		padding: 30px;
+	}
+
+	.wrapper h2 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	#skills > ul > li img {
+		width: 100px;
+	}
+
+	#professionalExp > ul, #professionalExp > ul > li {
+		margin-left: 45px;
+	}
+
+	.wrapper article:last-child ul li:first-child {
+		left: 40px;
+	}
+
+	.wrapper article:last-child ul li:nth-child(2) {
+		top: 40px;
+	}
+	
+	.wrapper article:last-child ul li:nth-child(3) {
+		top: 40px;
+	}
+	
+	.wrapper article:last-child ul li:nth-child(5) {
+		left: 230px;
+	}
+
+	.wrapper article:last-child ul li:nth-child(6) {
+		top: 80px;
+		left: 50px;
+	}
+	
+	.wrapper article:last-child ul li:nth-child(7) {
+		top: 75px;
+	}
+	
+	.wrapper article:last-child ul li:nth-child(8) {
+		top: 110px;
+	}
+	
+	.wrapper article:last-child ul li:nth-child(9) {
+		top: 100px;
+	}
+	
+	.wrapper article:last-child ul li:nth-child(10) {
+		top: 65px;
+	}
+
+	footer {
+		margin-top: 10px;
+		min-height: 40px;
+	}
+}
