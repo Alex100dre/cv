@@ -1,6 +1,7 @@
 const actionsBtns = document.querySelectorAll('.action-btn');
 const actionsCollapseBtn = document.querySelector('#actionsCollapse');
 const printBtn = document.querySelector('#print');
+const ageEl = document.querySelector('#age');
 
 const rippleEffect = event => {
     // Ripple effect
@@ -53,6 +54,19 @@ const printCv = event => {
     window.print();
 }
 
+const calculateAge = () => {
+    const today = new Date();
+    const birthDate = new Date('1992-10-13')
+    const monthDelta = today.getMonth() - birthDate.getMonth();
+    let age = today.getFullYear() - birthDate.getFullYear();
+
+    if (monthDelta < 0 || (monthDelta === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
+}
+
+ageEl.innerHTML = `${calculateAge()} ans`;
 actionsBtns.forEach(btn => btn.onclick = rippleEffect);
 actionsCollapseBtn.onclick = collapseActions;
 printBtn.onclick = printCv;
