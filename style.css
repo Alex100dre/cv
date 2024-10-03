@@ -498,7 +498,7 @@ footer{
 	}
 	
 	body {
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	header {
@@ -523,12 +523,12 @@ footer{
 	}
 
 	.wrapper h2 {
-		font-size: 30px;
-		line-height: 30px;
+		font-size: 28px;
+		line-height: 28px;
 	}
 
 	#skills > ul > li img {
-		width: 100px;
+		width: 90px;
 	}
 
 	#professionalExp > ul, #professionalExp > ul > li {
